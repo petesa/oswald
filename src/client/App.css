@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App a{
+  color:inherit;
+  text-decoration: none;
+}
+
+.App a:hover{
+  text-decoration: underline;
+}
