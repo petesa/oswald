@@ -10,15 +10,13 @@ const {
   PROJECT_ID,
 } = process.env;
 
-console.log(GOOGLE_APPLICATION_CREDENTIALS);
-
-/* router.get('*', (req, res, next) => {
+router.get('*', (req, res, next) => {
   if (req.xhr) {
     next();
   } else {
     res.redirect('/');
   }
-}); */
+});
 
 router.get('/:lang/:text', async (req, res) => {
   res.charset = 'UTF-8';
@@ -46,7 +44,7 @@ router.get('/:lang/:text', async (req, res) => {
 });
 
 async function makeTranslation(text, lang) {
-  const translate = new Translate({ PROJECT_ID });
+  const translate = new Translate({ projectId: PROJECT_ID });
   const [translation] = await translate.translate(text, lang);
   return translation;
 }

@@ -83,7 +83,7 @@ module.exports = [
     },
   },
   {
-    entry: `${clientDir}/index.js`,
+    entry: ['babel-polyfill', `${clientDir}/index.js`],
     output: {
       path: distDir,
       filename: 'bundle.js',

@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class About extends Component {
+class Settings extends Component {
   componentDidMount() {
   }
   render() {
     return (
-      <h1>About</h1>
+      <h1>Contact</h1>
     );
   }
 }
 
-export default About;
+export default Settings;
